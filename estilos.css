@@ -1,0 +1,428 @@
+body {
+  /*background-color: #252833;*/
+    margin: 0;
+    width: 1280px;
+    margin: 0 auto;
+    font-family: 'roboto';
+}
+
+.contenedor {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    align-items: center;
+    margin: 0 auto;
+    width: 1195px;
+    height: 25px;
+}
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    width: 100px;
+    display: inline-block;
+}
+
+.iconos {
+    position: relative;
+    bottom: 25px;
+    width: 1195px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagenes {
+    height: 25px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav ul li a {
+    width: 200px;
+    font-size: 15pt;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+header h1 {
+    background-image: url(./imagenes/Png-gelder.png);
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 85px;
+    font-size: 0;
+}
+
+.hero {
+    float: left;
+    width: 580px;
+    height: 300px;
+    background-color: darkseagreen;
+    padding: 10px;
+}
+
+
+.carrousel {
+  margin-bottom: 0px;
+}
+
+/*noticias*/
+
+h2 {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  font-size: 30pt;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: grey;
+}
+
+.cards {
+  margin: 0 auto;
+  width: calc(100% - 2em);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-areas: "a a b c""a a d d";
+  width: 80%;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card:before {
+  height: 0;
+  content: "";
+  display: block;
+  padding-bottom: 47.36%;
+}
+
+.card.content:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+
+.card:nth-child(1) {
+  grid-area: a;
+}
+
+.card:nth-child(2) {
+  grid-area: b;
+}
+
+.card:nth-child(3) {
+  grid-area: c;
+}
+
+.card:nth-child(4) {
+  grid-area: d;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-label {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.45rem;
+  background: #089f8a;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: white;
+  padding: 0.5em;
+}
+
+.card-title {
+  text-transform: capitalize;
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  color: #d6dbeb;
+  z-index: 5;
+  font-size: 0.8em;
+}
+
+.card.form {
+  position: relative;
+}
+
+.card.form:before {
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+.card.form:after {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  width: calc(100% - 1em);
+  height: calc(100% - 1em);
+  content: "";
+  background: #252833;
+}
+
+.card.form .form-title {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 7vw;
+  font-weight: 900;
+  z-index: 5;
+  text-transform: uppercase;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card.form .form-title:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  content: "Sign Up";
+  opacity: 0.5;
+  filter: blur(10px);
+  transition: all 0.25s ease;
+  z-index: 2;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.card:nth-child(2) .card-label {
+  background: #ef4e7b;
+}
+
+.card:nth-child(3) .card-label {
+  background: #1098ad;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+
+.card:hover .form-title:before {
+  filter: blur(3px);
+  opacity: 0.7;
+}
+
+/*productos*/
+/*
+.tienda {
+  margin-bottom: 50px;
+}
+
+.productos {
+  width: 90%;
+  margin: 0 auto;
+  column-count: 4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.productos img {
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.productos ul li {
+  list-style: none;
+}
+*/
+/**//**//**//**/
+
+.productos {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: grey;
+  padding: 0px;
+  margin: 0;
+}
+.tarjeta {
+  width: 350px;
+  height: 400px;
+  box-shadow: 0 0 3px black;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.detalles-tarjeta{
+  padding: 10px;
+  color: grey;
+  font-size: .9em
+}
+.detalles-tarjeta h2{
+  font-size: 2em;
+}
+.detalles-tarjetah3{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.detalles-tarjeta p{
+  margin-top: 20;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 1.6;
+  color: grey;
+}
+
+.tarjeta-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.precio {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: darkviolet;
+}
+.tarjeta-footer button {
+  color: red;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+  color: black;
+  transition: .2s;
+}
+.tarjeta-footer button:hover, .tarjeta-footer button:active{ 
+  color: green;
+  background-color: red;
+}
+
+.tarjeta-footer button:active {
+  outline: 2px solid brown;
+}
+
+.detalles-tarjeta, .tarjeta-footer, .activo {
+  position: relative;
+  bottom: 304px;
+}
+
+.activo:hover {
+  position: relative;
+  bottom: 304px;
+  opacity: 0;
+}
+
+/*
+aside {
+    float: right;
+    width: 380px;
+    height: 300px;
+    background-color: darkviolet;
+    padding: 10px;
+}
+
+footer {
+    height: 40px;
+    background-color: forestgreen;
+    clear: both;
+}*/
