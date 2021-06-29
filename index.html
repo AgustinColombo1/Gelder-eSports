@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <link rel="shortcut icon" href="./imagenes/Png-gelderICO.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gelder eSports</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="carousel.js">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelder eSports</title>
+  <link rel="stylesheet" href="estilos.css">
+  <!--linkeo icono ir arriba de toda la pagina-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
-
-        <h1>gelder esports gaming</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Tienda</a></li>
-                    <li><a href="#">Equipos</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+  <div class="contenedor">
+    <header>
+      <!--logo-->
+      <h1>gelder esports gaming</h1>
+      <nav>
+        <ul class="secciones">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <!--
                 <section class="iconos">
                     <div class="imagenes">
-                        <img src="./imagenes/navbar/1España.png" alt="">
-                        <img src="./imagenes/navbar/2Cuenta.png" alt="">
-                        <img src="./imagenes/navbar/3Carrito.png" alt="">
-                        <img src="./imagenes/navbar/4Buscar.png" alt="">
+                        <img src="./imagenes/navbar/1España.png" alt="idioma">
+                        <img src="./imagenes/navbar/2Cuenta.png" alt="cuenta">
+                        <img src="./imagenes/navbar/3Carrito.png" alt="carrito">
+                        <img src="./imagenes/navbar/4Buscar.png" alt="buscar">
                     </div>
-                </section>
-            </nav>
-        
+                </section>-->
+      </nav>
+
     </header>
-    
 
     <main>
-      <div class="carrousel">
-        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            <div class="gallery-cell"><img src="./imagenes/Carrousel/mockup1(x520).jpg" alt=""></div>
-            <div class="gallery-cell"><img src="./imagenes/Carrousel/mockup2(x520).jpg" alt=""></div>
-            <div class="gallery-cell"><img src="./imagenes/Carrousel/mockup3(x520).jpg" alt=""></div>
-            <div class="gallery-cell"><img src="./imagenes/Carrousel/mockup4(x520).jpg" alt=""></div>
-            <div class="gallery-cell"><img src="./imagenes/Carrousel/mockup6(x520).jpg" alt=""></div>
+      <!--carousel de imagenes-->
+      <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <div class="carousel-item item-1">
+          <a class="arrow arrow-prev" href="#item-3"></a>
+          <a class="arrow arrow-next" href="#item-2"></a>
+        </div>
+
+        <div class="carousel-item item-2">
+          <a class="arrow arrow-prev" href="#item-1"></a>
+          <a class="arrow arrow-next" href="#item-3"></a>
+        </div>
+
+        <div class="carousel-item item-3">
+          <a class="arrow arrow-prev" href="#item-2"></a>
+          <a class="arrow arrow-next" href="#item-1"></a>
         </div>
       </div>
 
 
-      <div class="noticias">
-      <h2>Noticias</h2>
+
+      <!--noticias-->
+      <div id="noticias">
+        <h2>Noticias</h2>
         <div class="cards">
           <div class="card content">
             <div class="card-content">
               <div class="card-img">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="Gamer">
+                <img class="static" src="./imagenes/frame_fnatic.jpg" alt="fnatic recauda 19 millones de dólares">
+                <img class="active" src="./imagenes/giffnatic.gif" alt="fnatic recauda 19 millones de dólares">
               </div>
-              <div class="card-label">e-Sports</div>
+              <div class="card-label">e-sports</div>
               <div class="card-title">
-                fnatic raises $19 million, shakes up leadership team
+                fnatic recauda 19 millones de dólares y remueve el equipo directivo
               </div>
             </div>
           </div>
           <div class="card content">
             <div class="card-content">
               <div class="card-img">
-                <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="keyboard">
+                <img class="static" src="./imagenes/frame_stadia.jpg" alt="google stadia">
+                <img class="active" src="./imagenes/gifstadia.gif" alt="google stadia">
               </div>
               <div class="card-label">
-                technology
+                tecnologia
               </div>
               <div class="card-title">
-                google Stadia: The Future of Gaming
+                google stadia: el futuro del juego
               </div>
             </div>
           </div>
@@ -83,29 +99,29 @@
             <div class="card-content">
               <div class="card-img">
                 <div class="card-img">
-                  <img class="static" src="./imagenes/frame_ps5.jpg" alt="Controller">
-                  <img class="active" src="./imagenes/gifps5.gif" alt="">
+                  <img class="static" src="./imagenes/frame_ps5.jpg" alt="ps5 no se lanzará">
+                  <img class="active" src="./imagenes/gifps5.gif" alt="ps5 no se lanzará">
                 </div>
               </div>
               <div class="card-label">
-                consoles
+                consolas
               </div>
               <div class="card-title">
-                ps5 won't launch before mid-2020
+                la ps5 no se lanzará antes de mediados de 2020
               </div>
             </div>
           </div>
           <div class="card content">
             <div class="card-content">
               <div class="card-img">
-                <img class="static" src="./imagenes/frame_esports.jpg" alt="Controller">
-                <img class="active" src="./imagenes/gifesports.gif" alt="">
+                <img class="static" src="./imagenes/frame_esports.jpg" alt="gelder campeon">
+                <img class="active" src="./imagenes/gifesports.gif" alt="gelder campeon">
               </div>
               <div class="card-label">
-                consoles
+                e-sports
               </div>
               <div class="card-title">
-                ps5 won't launch before mid-2020
+                gelder e-sports campeon del torneo de cs:go
               </div>
             </div>
           </div>
@@ -115,88 +131,174 @@
 
 
 
+      <!--tienda-->
+      <div id="tienda">
+        <h2>productos para ti</h2>
 
 
-    <h2>productos para ti</h2>
-    <div class="productos">
-      
         <div class="tarjeta">
           <div class="image">
             <img class="estatico" src="./imagenes/camiseta.jpg" alt="camiseta gelder">
             <img class="activo" src="./imagenes/casitetadelante.jpg" alt="camiseta gelder">
           </div>
-            <div class="detalles-tarjeta">
-              <h3>camiseta gelder</h3>
-            </div>
-            <div class="tarjeta-footer">
-              <div class="precio">$9.999,99</div>
-              <button>Añadir al carro</button>
-            </div>
+          <div class="detalles-tarjeta">
+            <h3>camiseta gelder</h3>
+          </div>
+          <div class="tarjeta-footer">
+            <div class="precio">$9.999,99</div>
+            <button class="botonTienda">Añadir al carrito</button>
+          </div>
         </div>
 
         <div class="tarjeta">
           <div class="image">
-            <img class="estatico" src="./imagenes/xbox.jpg" alt="camiseta gelder">
-            <img class="activo" src="./imagenes/ps5.jpg" alt="camiseta gelder">
+            <img class="estatico" src="./imagenes/xbox.jpg" alt="joysticks gelder">
+            <img class="activo" src="./imagenes/ps5.jpg" alt="joysticks gelder">
           </div>
-            <div class="detalles-tarjeta">
-              <h3>joysticks gelder</h3>
-            </div>
-            <div class="tarjeta-footer">
-              <div class="precio">$9.999,99</div>
-              <button>Añadir al carro</button>
-            </div>
+          <div class="detalles-tarjeta">
+            <h3>joysticks gelder</h3>
+          </div>
+          <div class="tarjeta-footer">
+            <div class="precio">$9.999,99</div>
+            <button class="botonTienda">Añadir al carrito</button>
+          </div>
         </div>
 
 
-      <div class="tarjeta">
-        <div class="image">
-          <img class="estatico" src="./imagenes/headphones_03.jpg">
-          <img class="activo" src="./imagenes/headphones_02.jpg" alt="camiseta gelder">
-        </div>
+        <div class="tarjeta">
+          <div class="image">
+            <img class="estatico" src="./imagenes/headphones_03.jpg" alt="auriculares gelder">
+            <img class="activo" src="./imagenes/headphones_02.jpg" alt="auriculares gelder">
+          </div>
           <div class="detalles-tarjeta">
             <h3>auriculares gelder</h3>
           </div>
           <div class="tarjeta-footer">
             <div class="precio">$9.999,99</div>
-            <button>Añadir al carro</button>
+            <button class="botonTienda">Añadir al carrito</button>
           </div>
-      </div>
+        </div>
 
-    <div class="tarjeta">
-      <div class="image">
-        <img class="estatico" src="./imagenes/mouse1.jpg" alt="camiseta gelder">
-        <img class="activo" src="./imagenes/mouse2.jpg" alt="camiseta gelder">
+        <div class="tarjeta">
+          <div class="image">
+            <img class="estatico" src="./imagenes/mouse1.jpg" alt="mouse gelder">
+            <img class="activo" src="./imagenes/mouse2.jpg" alt="mouse gelder">
+          </div>
+          <div class="detalles-tarjeta">
+            <h3>mouse gelder</h3>
+          </div>
+          <div class="tarjeta-footer">
+            <div class="precio">$9.999,99</div>
+            <button class="botonTienda">Añadir al carrito</button>
+          </div>
+        </div>
       </div>
-        <div class="detalles-tarjeta">
-          <h3>camiseta gelder</h3>
-        </div>
-        <div class="tarjeta-footer">
-          <div class="precio">$9.999,99</div>
-          <button>Añadir al carro</button>
-        </div>
+    </main>
+
+    <!--galeria-->
+    <div id="galeria">
+      <h2>Galería</h2>
+      <img class="imagenGaleria" src="./imagenes/galeria1.jpg" alt="Jugando la final">
+      <img class="imagenGaleria" src="./imagenes/galeria2.jpg" alt="Nuevos auriculares">
+      <img class="imagenGaleria" src="./imagenes/galeria3.jpg" alt="Clasificación al mundial">
+      <img class="imagenGaleria" src="./imagenes/galeria4.jpg" alt="Creador de contenido">
+      <img class="imagenGaleria" src="./imagenes/galeria5.jpg" alt="Mundial 2021">
+      <img class="imagenGaleria" src="./imagenes/galeria6.jpg" alt="Jugador del equipo">
+      <img class="imagenGaleria" src="./imagenes/galeria7.jpg" alt="Patido contra G2">
+      <img class="imagenGaleria" src="./imagenes/galeria8.jpg" alt="Campeones 2020">
     </div>
+
+    <!--nosotros-->
+    <div id="nosotros">
+      <h2>nosotros</h2>
+      <h4>fundado en 2021 <span>por agustín colombo.</span></h4>
+      <p>Gelder Esports es uno de los activos de entretenimiento líderes en los deportes
+        electrónicos, que reúne a algunos de los mejores jugadores competitivos del mundo.
+        Con décadas de experiencia, el personal multinacional de Gelder eleva a la empresa a
+        los niveles más altos de desempeño en todos los aspectos comerciales de la industria de
+        los deportes electrónicos. Gelder crea productos de primera línea, desarrolla el
+        contenido más entretenido y permite a sus jugadores superar cualquier obstáculo
+        para generar un desempeño sobresaliente en los torneos y ligas más destacados.
+        <span>Gelder Esports es, y ha sido desde sus inicios, uno de los cinco
+          clubes de deportes electrónicos más exitosos del mundo.</span></p>
+    </div>
+
+    <!--contacto-->
+    <div id="contacto">
+      <h2>Contacto</h2>
+      <div id="formulario">
+        <h5>Formulario de contacto</h5>
+        <form>
+          <div class="field">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="nombre" required>
+          </div>
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="mensaje" required></textarea>
+          </div>
+          <div>
+            <button class="botonFormulario" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--icono para volver al principio-->
+    <div class="scroll">
+      <a href="#"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <div id="footer">
+        <div class="footer-contenedor">
+          <div class="seccion">
+            <h6>noticias</h6>
+            <a class="aForm" href="#noticias">Recaudación Fnatic</a>
+            <a class="aForm" href="#noticias">Google Stadia</a>
+            <a class="aForm" href="#noticias">Lanzamiento PS5</a>
+            <a class="aForm" href="#noticias">Gelder Campeon</a>
+          </div>
+          <div class="seccion">
+            <h6>tienda</h6>
+            <a class="aForm" href="#tienda">Camiseta 2021</a>
+            <a class="aForm" href="#tienda">Joysticks 2021</a>
+            <a class="aForm" href="#tienda">Auriculares 2021</a>
+            <a class="aForm" href="#tienda">Mouse 2021</a>
+          </div>
+          <div class="seccion">
+            <h6>galería</h6>
+            <a class="aForm" href="#galeria">Jugando la final</a>
+            <a class="aForm" href="#galeria">Nuevos auriculares</a>
+            <a class="aForm" href="#galeria">Mundial 2021</a>
+            <a class="aForm" href="#galeria">Campeones 2020</a>
+          </div>
+          <div class="seccion">
+            <h6>nosotros</h6>
+            <a class="aForm" href="#nosotros">Fundador</a>
+            <a class="aForm" href="#nosotros">Sobre nosotros</a>
+          </div>
+          <div class="seccion">
+            <h6>contacto</h6>
+            <a class="aForm" href="#contacto" target="_blank">Formulario</a>
+            <a class="aForm" href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a class="aForm" href="https://twitter.com/" target="_blank">Twitter</a>
+            <a class="aForm" href="https://www.twitch.tv/" target="_blank">Twitch</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        © Copyright 2021 Gelder e-Sports.
+      </div>
   </div>
+    </footer>
+  
 
-        </main>
-
-        <aside>
-
-        </aside>
-
-        <footer>
-
-        </footer>
-
-    </div>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="/path/to/flickity.pkgd.min.js"></script>
-    
-
-
-    <!--Script bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
